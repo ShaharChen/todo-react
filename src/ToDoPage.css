@@ -1,0 +1,112 @@
+.ToDoApp {
+    background: linear-gradient(to left, hsl(259.12deg 56.23% 50.91% / 80%), #4650c2, #8e80b2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.Modal {
+    height: 650px;
+    width: 600px;
+    background-color: white;
+    border-radius: 6px;
+    display: grid;
+}
+
+.Chores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 15px;
+    overflow: auto;
+    max-height: 400px;
+    height: fit-content;
+}
+
+.Chore {
+    gap: 5px;
+    align-items: center;
+    display: flex;
+    border-radius: 6px;
+    padding: 8px;
+
+    &:hover {
+        cursor: pointer;
+        background: rgb(228, 223, 223);
+    }
+
+    input {
+        height: 20px;
+        width: 20px;
+    }
+
+    width: 90%;
+}
+
+
+.addChoreInput {
+    width: 50%;
+    height: 20px;
+    margin-left: 15px;
+}
+
+.title {
+    margin: auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+}
+
+.actionButtons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cleanButton {
+    align-self: end;
+    width: 30%;
+    height: 40px;
+    justify-self: center;
+    border-radius: 6px;
+    background-color: purple;
+    color: white;
+    font-size: 18px;
+    margin-left: 20px;
+
+    &:hover&:not(:disabled) {
+        cursor: pointer;
+    }
+
+    &:disabled {
+        background-color: gray;
+    }
+}
+
+.addButton {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    justify-self: end;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: #8a47c9;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.plusImg {
+    vertical-align: middle;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
