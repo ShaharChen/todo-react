@@ -12,7 +12,7 @@ const signInConfig = (username) => ({
     headers: {
         'Content-Type': 'application/json',
         'Access-Control-Request-Headers': '*',
-        'api-key': '8u6furt7nZhJgWgUfqKpoNAsVoLQ0bz3nAEWZPaMOkti8p2kK16g0LwH8CnI2CBy',
+        'api-key': '*',
     },
     data: data(username)
 });
@@ -34,7 +34,7 @@ const getUpdateListConfig = (username, choreList) => ({
     headers: {
         'Content-Type': 'application/json',
         'Access-Control-Request-Headers': '*',
-        'api-key': '8u6furt7nZhJgWgUfqKpoNAsVoLQ0bz3nAEWZPaMOkti8p2kK16g0LwH8CnI2CBy',
+        'api-key': '*',
     },
     data: chorePostData(username, choreList)
 });
@@ -54,7 +54,7 @@ const getListConfig = (username) => ({
     headers: {
         'Content-Type': 'application/json',
         'Access-Control-Request-Headers': '*',
-        'api-key': '8u6furt7nZhJgWgUfqKpoNAsVoLQ0bz3nAEWZPaMOkti8p2kK16g0LwH8CnI2CBy',
+        'api-key': '*',
     },
     data: getChoresData(username)
 });
